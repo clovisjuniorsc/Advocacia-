@@ -1,0 +1,194 @@
+```html
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page Advogada</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #E8E6E2; /* Cor de fundo principal */
+            color: #1C1C1C; /* Cor de texto principal */
+        }
+        .container {
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        header {
+            background-color: #1C1C1C; /* Cor de fundo do cabeçalho */
+            color: #FFFFFF; /* Cor do texto do cabeçalho */
+            padding: 20px 0;
+            text-align: center;
+        }
+        header img.logo {
+            max-width: 200px; /* Ajuste o tamanho conforme necessário */
+            margin-bottom: 10px;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            text-align: center;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: #FFFFFF;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .hero {
+            background-color: #BEBEBE; /* Cor de fundo da seção hero */
+            padding: 50px 20px;
+            text-align: center;
+            color: #1C1C1C;
+        }
+        .hero h1 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+        .hero p {
+            font-size: 1.2em;
+            margin-bottom: 30px;
+        }
+        .cta-button {
+            background-color: #C5A880; /* Cor do botão de CTA */
+            color: #FFFFFF;
+            padding: 15px 30px;
+            text-decoration: none;
+            font-size: 1.1em;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        .cta-button:hover {
+            background-color: #8A7E76; /* Cor do botão de CTA ao passar o mouse */
+        }
+        .services, .video-section, .download-section, .contact-section {
+            padding: 40px 20px;
+            text-align: center;
+        }
+        .services h2, .video-section h2, .download-section h2, .contact-section h2 {
+            font-size: 2em;
+            margin-bottom: 30px;
+            color: #1C1C1C;
+        }
+        .service-item {
+            margin-bottom: 30px;
+        }
+        .service-item img {
+            max-width: 100px; /* Ajuste conforme necessário */
+            margin-bottom: 10px;
+        }
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%; /* Proporção 16:9 */
+            height: 0;
+            overflow: hidden;
+            max-width: 100%;
+            background: #000;
+            margin: 0 auto 30px auto; /* Centraliza e adiciona margem inferior */
+        }
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+        footer {
+            background-color: #1C1C1C;
+            color: #FFFFFF;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <!-- Substitua 'logo.png' pelo caminho real do seu logo -->
+            <img src="logo.png" alt="Logo da Advogada" class="logo">
+            <nav>
+                <ul>
+                    <li><a href="#services">Serviços</a></li>
+                    <li><a href="#video">Aula Gratuita</a></li>
+                    <li><a href="#download">Planilha Gratuita</a></li>
+                    <li><a href="#contact">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h1>Transforme sua Prática Jurídica com Nossa Planilha Exclusiva</h1>
+            <p>Descubra como otimizar seu tempo e aumentar sua produtividade com nossa ferramenta desenvolvida especialmente para advogados.</p>
+            <a href="#download" class="cta-button">Baixe sua Planilha Grátis Agora!</a>
+        </div>
+    </section>
+
+    <section id="services" class="services">
+        <div class="container">
+            <h2>Nossos Serviços</h2>
+            <div class="service-item">
+                <!-- Substitua 'icon-service1.png' e o texto pelos seus serviços -->
+                <img src="icon-service1.png" alt="Ícone Serviço 1">
+                <h3>Consultoria Especializada</h3>
+                <p>Oferecemos consultoria jurídica detalhada para garantir que você esteja sempre um passo à frente.</p>
+            </div>
+            <div class="service-item">
+                <img src="icon-service2.png" alt="Ícone Serviço 2">
+                <h3>Defesa Estratégica</h3>
+                <p>Nossa equipe está preparada para defender seus interesses com estratégias robustas e eficazes.</p>
+            </div>
+            <div class="service-item">
+                <img src="icon-service3.png" alt="Ícone Serviço 3">
+                <h3>Documentação e Contratos</h3>
+                <p>Auxiliamos na elaboração e revisão de todos os tipos de documentos e contratos legais.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="video" class="video-section">
+        <div class="container">
+            <h2>Aprenda a Usar a Planilha</h2>
+            <p>Assista ao nosso vídeo tutorial e veja como é fácil utilizar nossa planilha para transformar sua rotina.</p>
+            <div class="video-container">
+                <!-- Substitua o link do YouTube pelo seu vídeo -->
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+    </section>
+
+    <section id="download" class="download-section">
+        <div class="container">
+            <h2>Baixe sua Planilha Gratuita</h2>
+            <p>Clique no botão abaixo para fazer o download da planilha e começar a organizar sua prática jurídica hoje mesmo!</p>
+            <!-- Substitua '#' pelo link real para o download da planilha -->
+            <a href="#" class="cta-button">Download da Planilha</a>
+        </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2>Entre em Contato</h2>
+            <p>Tem alguma dúvida? Entre em contato conosco!</p>
+            <p>Email: contato@advogada.com.br | Telefone: (XX) XXXXX-XXXX</p>
+            <!-- Adicione um formulário de contato se desejar -->
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Nome da Advogada. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>
+
